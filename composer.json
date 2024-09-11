@@ -1,0 +1,9 @@
+{
+    "name": "baelish/test_task",
+    "autoload": {
+        "psr-4": {
+            "Baelish\\TestTask\\": "src/"
+        }
+    },
+    "require": {}
+}
