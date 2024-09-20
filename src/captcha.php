@@ -1,7 +1,7 @@
 <?php
     define('SMARTCAPTCHA_SERVER_KEY', 'server-key');
 
-    function check_captcha($token) {
+    function check_captcha($token) : bool {
         $ch = curl_init();
         $args = http_build_query([
             "secret" => SMARTCAPTCHA_SERVER_KEY,
@@ -31,14 +31,5 @@
     } else {
         echo "Robot\n";
     }
-    print_r($_POST);
-?>
-<form method="post">
-    <div
-        id="captcha-container"
-        class="smart-captcha"
-        data-sitekey="ysc1_PvMAj2UmKRurKeeSlw7UrZJakujLSgacMK3XsBAX760b6625"
-    >
-        <input type="hidden" name="smart-token" value="<токен>">
-    </div>
-</form>
+
+

@@ -30,7 +30,6 @@
             foreach($urls as $url) {
                 matchUrl($url['url'], $url['filename']);
             }
-            require_once '../src/captcha.php';
         ?>
     </div>
 </body>
